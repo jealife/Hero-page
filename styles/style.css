@@ -162,3 +162,23 @@ main {
 .colorize {
   color: #83c61f;
 }
+
+@media only screen and (max-width: 680px) {
+  .hero-title h1{
+    font-size: 2rem;
+  }
+
+  .hero-cta{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .menu{
+    display: none;
+  }
+  .container{
+    padding: 1rem .25rem;
+  }
+  main{
+    padding: 0 .85rem 1rem;
+  }
+}
