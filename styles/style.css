@@ -5,7 +5,42 @@
 }
 body{
   background-color: #F1F1F1;
+  font-family: "Poppins", sans-serif;
 }
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 a{
   text-decoration: none;
   color:#414141;
@@ -14,9 +49,11 @@ a{
 nav{
   display: flex;
   width:100%;
+  max-width: 81rem;
+  margin: 0   auto;
   align-items: center; 
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 1.25rem 1rem;
 }
 
 .logo{
@@ -24,8 +61,11 @@ nav{
   align-items: center;
   gap: 0.25rem;
   color: green;
+  font-size: 1.5rem;
 }
-
+i{
+  color: #252525;
+}
 .menu{
   display: flex;
   align-items: center;
@@ -40,4 +80,67 @@ nav{
 
 .contact a {
   color:green;
+}
+
+main{
+  padding: 0 2rem 2rem 2rem;
+}
+/* Hero section  */
+
+.hero{
+  width: 100%;
+  max-width: 81rem;
+  border-radius: 14px;
+  margin: 0 auto;
+  min-height: 85vh;
+  min-height: 85dvh;
+  background-color: #252525;
+
+  /* centrer le contenu */
+  display: grid;
+  place-content: center;
+  background-image: url('https://images.unsplash.com/photo-1515259387710-51e175f9ec6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  background-size: cover;
+  padding: 1rem 2rem;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 6rem;
+}
+
+.hero-title h1{
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-align: center;
+}
+.hero-cta{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.hero-cta button{
+  padding: 1rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #252525;
+  color: #F1F1F1;
+  cursor: pointer;
+  font: 1.25rem;
+  font-weight: 700;
+}
+
+.hero-cta button:nth-child(1){
+  background-color: #83c61f;
+}
+.hero-cta button:nth-child(2){
+  background-color: transparent;
+  outline: #F1F1F1 1px solid;
+}
+.colorize{
+  color: #83c61f;
 }
